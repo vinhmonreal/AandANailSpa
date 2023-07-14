@@ -15,7 +15,6 @@ export default function GetDrinks() {
     const fetchDrinks = async () => {
         const res = await fetch (`${base_url}/admin/drinks`)
         const data = await res.json();
-        console.log(data);
         setDrinks(data);
         setLoading(false);
     }

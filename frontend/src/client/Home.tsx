@@ -23,7 +23,6 @@ export default function Home() {
         const res = await fetch(`${base_url}/admin/homepage`);
         const data = await res.json()
         setData(data);
-        console.log(data);
         setLoading(false);
         setH1(data[0].h1);
         setH2(data[0].h2);
@@ -40,7 +39,6 @@ export default function Home() {
         const data = await res.json()
         const gallery = data.filter((service: { type: string; }) => service.type === "Gallery");
         setGallery(gallery);
-        console.log(gallery);
     }
 
     useEffect(() => {

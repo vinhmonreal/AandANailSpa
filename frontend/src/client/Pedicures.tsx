@@ -11,7 +11,6 @@ export default function Pedicures() {
     const fetchServices = async () => {
         const res = await fetch(`${base_url}/admin/services`);
         const data = await res.json();
-        console.log(data);
         setServices(data);
         setLoading(false);
     }

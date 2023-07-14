@@ -169,7 +169,7 @@ button {
     display: none;
   }  
   .gallery{
-    max-width: 300px;
+    width: 100%;
   }
   #navbar .nav-item{
     padding: 0.5rem 0.5rem;
@@ -182,5 +182,6 @@ button {
   }
   #root{
     width: 100%;
+    padding: 0.2rem;
   }
 }

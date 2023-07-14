@@ -13,7 +13,6 @@ export default function Login() {
 
     useEffect(() => {
         if (user.loggedIn === true) {
-            console.log(user, "user")
             navigate("/");
         }
     }, [user.loggedIn]);
@@ -46,10 +45,8 @@ export default function Login() {
                     isAdmin: data.isAdmin,
                     loggedIn: true,
                 })
-                console.log(user, "user")
             }
             else {
-                console.log("no")
                 alert("Login failed");
             }
     }

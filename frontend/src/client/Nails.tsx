@@ -14,7 +14,6 @@ export default function Nails() {
         const res = await fetch(`${base_url}/admin/nails`);
         const data = await res.json()
               
-        console.log(manicure);
         setServices(data);
         setLoading(false);
     }
@@ -28,7 +27,6 @@ export default function Nails() {
        
         const nail = services.filter((service: { type: string; }) => service.type === "Nail");
         setNail(nail);
-        console.log(nail);
     }, [services]);
 
   

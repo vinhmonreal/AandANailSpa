@@ -19,7 +19,6 @@ export default function Logout() {
     localStorage.setItem('name','')
     localStorage.setItem('isAdmin','')
     localStorage.setItem('loggedIn','false')
-    console.log(localStorage.getItem('token'),localStorage.getItem('name'),localStorage.getItem('isAdmin'),localStorage.getItem('loggedIn'))
     navigate('/')
   })  
   return <Spinner animation="border" />

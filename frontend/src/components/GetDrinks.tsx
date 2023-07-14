@@ -11,7 +11,6 @@ export const GetDrinks= async () =>  {
         return data;
     }
     else {
-        console.log("no")
         alert("Get drinks failed");
     }
 }

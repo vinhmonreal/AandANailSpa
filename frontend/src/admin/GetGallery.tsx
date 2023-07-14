@@ -16,7 +16,6 @@ export default function GetGallery() {
     const fetchServices = async () => {
         const res = await fetch (`${base_url}/admin/nails`)
         const data = await res.json();
-        console.log(data);
         setServices(data);
         setLoading(false);
     }
@@ -28,7 +27,6 @@ export default function GetGallery() {
     useEffect(() => {
          const gallery = services.filter((service: { type: string; }) => service.type === "Gallery");
         setGallery(gallery);
-        console.log(gallery);
     }, [services]);
 
     async function handleRemove(id:string) {

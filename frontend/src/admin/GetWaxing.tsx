@@ -16,7 +16,6 @@ export default function GetWaxing() {
     const fetchServices = async () => {
         const res = await fetch (`${base_url}/admin/nails`)
         const data = await res.json();
-        console.log(data);
         setServices(data);
         setLoading(false);
     }

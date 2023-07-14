@@ -28,7 +28,6 @@ export default function Makeorder() {
         }
         )
         const data = await res.json();
-        console.log(data);
         if (res.status === 200) {
             setLoading(false);
             alert("Your drink is on the way!")

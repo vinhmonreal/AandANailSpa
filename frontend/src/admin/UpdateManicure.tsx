@@ -18,7 +18,6 @@ export default function UpdateManicure() {
         const instruction = (document.getElementById('updateservice-instruction') as HTMLInputElement).value;
         const image = ''
         const type = "Manicure"
-        console.log(_id);
         const updateData = {
             "id": _id?.split('"').join(''),
             "name": name,

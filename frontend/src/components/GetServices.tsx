@@ -10,7 +10,6 @@ export const GetServices = async () =>  {
         return data;
     }
     else {
-        console.log("no")
         alert("Get services failed");
     }
 }

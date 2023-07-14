@@ -19,7 +19,6 @@ export default function GetPedicures() {
     const fetchDrinks = async () => {
         const res = await fetch (`${base_url}/admin/services`)
         const data = await res.json();
-        console.log(data);
         setServices(data);
         setLoading(false);
     }
