@@ -14,7 +14,7 @@ import cors from 'cors';
 import { CreateNewService, GetAllServices, RemoveService, UpdateService } from './models/Service.js';
 import { SendEmail} from './models/order.js';
 import { CreateNewSetting, GetSetting, DeleteSetting } from './models/setting.js';
-import { CreateNewNail, GetAllNails, RemoveNail, UpdateNail } from './models/nail.js';
+import { CreateNewNail, GetAllNails, RemoveNail, UpdateNail } from './models/Nail.js';
 import { CreateNewHomepage, GetHomepage, UpdateHomePage } from './models/homepage.js';
 
 export const api = process.env.API_URL;
